@@ -5,7 +5,7 @@ Este checklist detalha as etapas de desenvolvimento do sistema de gerenciamento 
 ## 1. Configuração, Infraestrutura e Documentação
 - [x] Inicializar repositório Git e configurar `.gitignore`.
 - [x] Criar e detalhar o arquivo `README.md`.
-- [ ] **Estrutura de Diretórios:** Criar as pastas `models/`, `structures/`, `utils/`, `dados/` e o arquivo `main.py`.
+- [x] **Estrutura de Diretórios:** Criar as pastas `modelos/`, `estruturas/`, `dados/` e o arquivo `main.py`.
 
 ## 2. Modelagem de Dados (Entidades & Nodos)
 - [ ] **Classe `Figurinha`:** Implementar os atributos `id` (int), `nome` (str), `pais` (str), `posicao` (str) e `raridade` (str).
