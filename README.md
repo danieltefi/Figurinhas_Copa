@@ -55,8 +55,7 @@ O código-fonte está estruturado de forma modular e clara, separando as respons
 │   └── persistencia.py    # Funções de leitura e escrita de arquivos JSON
 ├── modelos/
 │   ├── figurinha.py       # Definição da entidade Figurinha
-│   ├── nodo_fila.py       # Estrutura do nó para a Fila FIFO
-│   └── nodo_lista.py      # Estrutura do nó para a Lista Encadeada
+│   ├── nodo_fila.py       # Estrutura do nó para a Fila FIFO e Lista Encadeada
 ├── CHECKLIST.md           # Detalha as etapas de desenvolvimento do projeto
 ├── main.py                # Ponto de entrada do sistema e interface de simulação
 └── README.md              # Documentação do projeto
