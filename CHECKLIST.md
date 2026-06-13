@@ -14,11 +14,11 @@ Este checklist detalha as etapas de desenvolvimento do sistema de gerenciamento 
 - [x] **Classe `NodoFila`:** Criar o nó encadeado para a Fila FIFO (armazenar objeto `Figurinha` e referência `proximo`).
 
 ## 3. Implementação das Estruturas Manuais (Ponteiros Puros)
-- [ ] **Classe `Album` (Lista Encadeada Simples):**
-    - [ ] Implementar ponteiro `cabeca` e contador `tamanho`.
-    - [ ] Implementar algoritmo de **Inserção Dinâmica Ordenada** por ID.
-    - [ ] Implementar algoritmo de **Remoção por ID** com ajuste manual de ponteiros (antecessor/sucessor).
-    - [ ] Implementar mecanismo de **Busca Linear** multimutável (por ID, Nome ou País).
+- [x] **Classe `Album` (Lista Encadeada Simples):**
+    - [x] Implementar ponteiro `cabeca` e contador `tamanho`.
+    - [x] Implementar algoritmo de **Inserção Dinâmica Ordenada** por ID.
+    - [x] Implementar algoritmo de **Remoção por ID** com ajuste manual de ponteiros (antecessor/sucessor).
+    - [x] Implementar mecanismo de **Busca Linear** multimutável (por ID, Nome ou País).
 - [ ] **Classe `Fila` (FIFO Sequencial por Nós):**
     - [ ] Implementar ponteiros `inicio` e `fim`.
     - [ ] Implementar método `enqueue` (inserção no fim).
