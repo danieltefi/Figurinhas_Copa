@@ -8,10 +8,10 @@ Este checklist detalha as etapas de desenvolvimento do sistema de gerenciamento 
 - [x] **Estrutura de Diretórios:** Criar as pastas `modelos/`, `estruturas/`, `dados/` e o arquivo `main.py`.
 
 ## 2. Modelagem de Dados (Entidades & Nodos)
-- [ ] **Classe `Figurinha`:** Implementar os atributos `id` (int), `nome` (str), `pais` (str), `posicao` (str) e `raridade` (str).
-- [ ] **Método Especial:** Adicionar o método `__str__` na classe `Figurinha` para exibição formatada.
-- [ ] **Classe `NodoLista`:** Criar o nó para a Lista Encadeada (armazenar objeto `Figurinha` e referência `proximo`).
-- [ ] **Classe `NodoFila`:** Criar o nó encadeado para a Fila FIFO (armazenar objeto `Figurinha` e referência `proximo`).
+- [x] **Classe `Figurinha`:** Implementar os atributos `id` (int), `nome` (str), `pais` (str), `posicao` (str) e `raridade` (str).
+- [x] **Método Especial:** Adicionar o método `__str__` na classe `Figurinha` para exibição formatada.
+- [x] **Classe `NodoLista`:** Criar o nó para a Lista Encadeada (armazenar objeto `Figurinha` e referência `proximo`).
+- [x] **Classe `NodoFila`:** Criar o nó encadeado para a Fila FIFO (armazenar objeto `Figurinha` e referência `proximo`).
 
 ## 3. Implementação das Estruturas Manuais (Ponteiros Puros)
 - [ ] **Classe `Album` (Lista Encadeada Simples):**
