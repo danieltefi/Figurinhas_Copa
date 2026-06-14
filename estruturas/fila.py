@@ -34,6 +34,6 @@ class Fila:
             return None
         return self.inicio.figurinha
 
-    def limpar(self):  # ssvazia fila inteira
+    def limpar(self):  # esvazia fila inteira
         self.inicio = None
         self.fim = None
