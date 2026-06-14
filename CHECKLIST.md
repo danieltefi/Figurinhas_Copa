@@ -19,11 +19,11 @@ Este checklist detalha as etapas de desenvolvimento do sistema de gerenciamento 
     - [x] Implementar algoritmo de **Inserção Dinâmica Ordenada** por ID.
     - [x] Implementar algoritmo de **Remoção por ID** com ajuste manual de ponteiros (antecessor/sucessor).
     - [x] Implementar mecanismo de **Busca Linear** multimutável (por ID, Nome ou País).
-- [ ] **Classe `Fila` (FIFO Sequencial por Nós):**
-    - [ ] Implementar ponteiros `inicio` e `fim`.
-    - [ ] Implementar método `enqueue` (inserção no fim).
-    - [ ] Implementar método `dequeue` (remoção do início).
-    - [ ] Implementar método `peek` (espiar o primeiro da fila) e `limpar`.
+- [x] **Classe `Fila` (FIFO Sequencial por Nós):**
+    - [x] Implementar ponteiros `inicio` e `fim`.
+    - [x] Implementar método `enqueue` (inserção no fim).
+    - [x] Implementar método `dequeue` (remoção do início).
+    - [x] Implementar método `peek` (espiar o primeiro da fila) e `limpar`.
 
 ## 4. Lógica de Negócio (Álbum, Repetidas e Trocas)
 - [ ] **Redirecionamento Automático:** Lógica na inserção para verificar se a figurinha já existe no álbum e enviá-la para a lista de **Figurinhas Repetidas** (que também usa a estrutura `Album`).
