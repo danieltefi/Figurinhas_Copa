@@ -33,9 +33,9 @@ Este checklist detalha as etapas de desenvolvimento do sistema de gerenciamento 
 - [ ] **Instância de Histórico:** Garantir o registro imutável das trocas usando uma instância isolada da classe `Fila`.
 
 ## 5. Persistência de Dados
-- [ ] **Módulo de Persistência (`persistencia.py`):** Criar funções para manipular o arquivo JSON.
-- [ ] **Operação de Salvamento:** Serializar o estado atual do Álbum, das Figurinhas Repetidas e das Filas para o arquivo `dados/dados_album.json`.
-- [ ] **Operação de Carregamento:** Reconstruir todas as estruturas de nós na memória ao iniciar o programa a partir do arquivo JSON salvo.
+- [x] **Módulo de Persistência (`persistencia.py`):** Criar funções para manipular o arquivo JSON.
+- [x] **Operação de Salvamento:** Serializar o estado atual do Álbum, das Figurinhas Repetidas e das Filas para o arquivo `dados/dados_album.json`.
+- [x] **Operação de Carregamento:** Reconstruir todas as estruturas de nós na memória ao iniciar o programa a partir do arquivo JSON salvo.
 
 ## 6. Interface de Simulação e Robustez
 - [ ] **Menu Interativo (`main.py`):** Construir o fluxo de console para navegação nas funcionalidades (Inserir, Remover, Buscar, Ver Álbum, Ver Repetidas, Progresso, Propor Troca, Processar Trocas, Ver Histórico e Sair).
