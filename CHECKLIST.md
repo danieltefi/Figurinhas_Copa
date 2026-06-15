@@ -38,15 +38,15 @@ Este checklist detalha as etapas de desenvolvimento do sistema de gerenciamento 
 - [x] **Operação de Carregamento:** Reconstruir todas as estruturas de nós na memória ao iniciar o programa a partir do arquivo JSON salvo.
 
 ## 6. Interface de Simulação e Robustez
-- [ ] **Menu Interativo (`main.py`):** Construir o fluxo de console para navegação nas funcionalidades (Inserir, Remover, Buscar, Ver Álbum, Ver Repetidas, Progresso, Propor Troca, Processar Trocas, Ver Histórico e Sair).
-- [ ] **Tratamento de Exceções:**
-    - [ ] Validar entradas numéricas (IDs).
-    - [ ] Tratar tentativas de remoção ou busca de figurinhas inexistentes.
-    - [ ] Validar propostas de troca com dados inválidos ou insuficientes.
+- [x] **Menu Interativo (`main.py`):** Construir o fluxo de console para navegação nas funcionalidades (Inserir, Remover, Buscar, Ver Álbum, Ver Repetidas, Progresso, Propor Troca, Processar Trocas, Ver Histórico e Sair).
+- [x] **Tratamento de Exceções:**
+    - [x] Validar entradas numéricas (IDs).
+    - [x] Tratar tentativas de remoção ou busca de figurinhas inexistentes.
+    - [x] Validar propostas de troca com dados inválidos ou insuficientes.
 
 ## 7. Validação de Restrições Técnicas
-- [ ] **Restrição Absoluta:** Garantir que as coleções nativas do Python (`list`, `dict`, `set`, `deque`) **não** sejam usadas para substituir a lógica de ponteiros das estruturas principais.
-- [ ] **Entregas Incrementais:** Realizar commits organizados e frequentes no GitHub ao longo do desenvolvimento para comprovação de evolução do código.
+- [x] **Restrição Absoluta:** Garantir que as coleções nativas do Python (`list`, `dict`, `set`, `deque`) **não** sejam usadas para substituir a lógica de ponteiros das estruturas principais.
+- [x] **Entregas Incrementais:** Realizar commits organizados e frequentes no GitHub ao longo do desenvolvimento para comprovação de evolução do código.
 
 ---
-*Status Atual: Em andamento*
+*Status Atual: finalizado*

@@ -64,4 +64,4 @@ O código-fonte está estruturado de forma modular e clara, separando as respons
 ---
 
 ### Status do Projeto:
-*Em andamento*
+*Finalizado*
