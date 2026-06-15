@@ -26,11 +26,11 @@ Este checklist detalha as etapas de desenvolvimento do sistema de gerenciamento 
     - [x] Implementar método `peek` (espiar o primeiro da fila) e `limpar`.
 
 ## 4. Lógica de Negócio (Álbum, Repetidas e Trocas)
-- [ ] **Redirecionamento Automático:** Lógica na inserção para verificar se a figurinha já existe no álbum e enviá-la para a lista de **Figurinhas Repetidas** (que também usa a estrutura `Album`).
-- [ ] **Controle de Progresso:** Implementar método para calcular em tempo real a porcentagem concluída do álbum (com base no total de figurinhas únicas inseridas).
-- [ ] **Fila de Propostas:** Lógica para registrar propostas de troca que entram na Fila FIFO.
-- [ ] **Sistema de Troca Automática:** Verificar se ambos os lados possuem os cromos repetidos necessários, executar a transação e mover o registro para o histórico.
-- [ ] **Instância de Histórico:** Garantir o registro imutável das trocas usando uma instância isolada da classe `Fila`.
+- [x] **Redirecionamento Automático:** Lógica na inserção para verificar se a figurinha já existe no álbum e enviá-la para a lista de **Figurinhas Repetidas** (que também usa a estrutura `Album`).
+- [x] **Controle de Progresso:** Implementar método para calcular em tempo real a porcentagem concluída do álbum (com base no total de figurinhas únicas inseridas).
+- [x] **Fila de Propostas:** Lógica para registrar propostas de troca que entram na Fila FIFO.
+- [x] **Sistema de Troca Automática:** Verificar se ambos os lados possuem os cromos repetidos necessários, executar a transação e mover o registro para o histórico.
+- [x] **Instância de Histórico:** Garantir o registro imutável das trocas usando uma instância isolada da classe `Fila`.
 
 ## 5. Persistência de Dados
 - [x] **Módulo de Persistência (`persistencia.py`):** Criar funções para manipular o arquivo JSON.
