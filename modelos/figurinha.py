@@ -3,7 +3,7 @@ class Figurinha:
         self.id = id_fig
         self.nome = nome
         self.pais = pais
-        self.raridade = raridade
+        self.raridade = raridade.strip()
 
     def __str__(self):
         if self.raridade != '': # se a figurinha tiver raridade
