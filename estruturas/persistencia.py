@@ -16,7 +16,6 @@ def salvar_dados(caminho_arquivo, album_principal, album_repetidas, fila_trocas,
             "id": atual.figurinha.id,
             "nome": atual.figurinha.nome,
             "pais": atual.figurinha.pais,
-            "posicao": atual.figurinha.posicao,
             "raridade": atual.figurinha.raridade
         }
         dados_para_salvar['album'].append(dados_fig)
@@ -28,7 +27,6 @@ def salvar_dados(caminho_arquivo, album_principal, album_repetidas, fila_trocas,
             "id": atual_rep.figurinha.id,
             "nome": atual_rep.figurinha.nome,
             "pais": atual_rep.figurinha.pais,
-            "posicao": atual_rep.figurinha.posicao,
             "raridade": atual_rep.figurinha.raridade
         }
         dados_para_salvar['repetidas'].append(dados_fig)
@@ -40,7 +38,6 @@ def salvar_dados(caminho_arquivo, album_principal, album_repetidas, fila_trocas,
             "id": atual_fila.figurinha.id,
             "nome": atual_fila.figurinha.nome,
             "pais": atual_fila.figurinha.pais,
-            "posicao": atual_fila.figurinha.posicao,
             "raridade": atual_fila.figurinha.raridade
         }
         dados_para_salvar['trocas'].append(dados_fig)
@@ -52,7 +49,6 @@ def salvar_dados(caminho_arquivo, album_principal, album_repetidas, fila_trocas,
             "id": atual_hist.figurinha.id,
             "nome": atual_hist.figurinha.nome,
             "pais": atual_hist.figurinha.pais,
-            "posicao": atual_hist.figurinha.posicao,
             "raridade": atual_hist.figurinha.raridade
         }
         dados_para_salvar['historico'].append(dados_fig)
@@ -73,20 +69,20 @@ def carregar_dados(caminho_arquivo, album_principal, album_repetidas, fila_troca
 
     if 'album' in dados_carregados:
         for dados in dados_carregados['album']: # reconstrói álbum principal
-            nova_fig = Figurinha(dados['id'], dados['nome'], dados['pais'], dados['posicao'], dados['raridade'])
+            nova_fig = Figurinha(dados['id'], dados['nome'], dados['pais'], dados['raridade'])
             album_principal.adicionar(nova_fig)
 
     if 'repetidas' in dados_carregados:
         for dados in dados_carregados['repetidas']: # reconstrói repetidas
-            nova_fig = Figurinha(dados['id'], dados['nome'], dados['pais'], dados['posicao'], dados['raridade'])
+            nova_fig = Figurinha(dados['id'], dados['nome'], dados['pais'], dados['raridade'])
             album_repetidas.adicionar(nova_fig)
 
     if 'trocas' in dados_carregados:
         for dados in dados_carregados['trocas']: # reconstrói fila de trocas
-            nova_fig = Figurinha(dados['id'], dados['nome'], dados['pais'], dados['posicao'], dados['raridade'])
+            nova_fig = Figurinha(dados['id'], dados['nome'], dados['pais'], dados['raridade'])
             fila_trocas.enqueue(nova_fig)
 
     if "historico" in dados_carregados:
         for dados in dados_carregados['historico']: # reconstrói fila histórico
-            nova_fig = Figurinha(dados['id'], dados['nome'], dados['pais'], dados['posicao'], dados['raridade'])
+            nova_fig = Figurinha(dados['id'], dados['nome'], dados['pais'], dados['raridade'])
             fila_historico.enqueue(nova_fig)
