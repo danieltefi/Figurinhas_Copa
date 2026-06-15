@@ -10,7 +10,7 @@ Para garantir o pleno domínio sobre a alocação de memória e a lógica dos po
 
 ### 1. Lista Encadeada Simples (Álbum)
 Utilizada para representar o álbum de figurinhas do usuário de forma ordenada e dinâmica.
-* **`Figurinha` (Entidade):** Contém os atributos fundamentais de cada cromo: `id` (int), `nome` (str), `pais` (str), `posicao` (str) e `raridade` (str).
+* **`Figurinha` (Entidade):** Contém os atributos fundamentais de cada cromo: `id` (int), `nome` (str), `pais` (str) e `raridade` (str).
 * **`NodoLista`:** Objeto nó que armazena a instância da `Figurinha` e uma referência (`proximo`) para o próximo nó da lista.
 * **`Album`:** Classe controladora da lista encadeada. Contém o ponteiro `cabeca` e o controle de `tamanho`. Implementa os algoritmos de inserção ordenada, remoção por ID, busca linear e cálculo de completude.
 
