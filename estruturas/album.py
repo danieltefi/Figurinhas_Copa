@@ -93,3 +93,14 @@ class Album:
         
         porcentagem = (self.tamanho / total_album) * 100
         return porcentagem
+    
+    def pacotinho_inserir_figurinha(self, nova_figurinha, album_repetidas):
+        conseguiu_inserir = self.adicionar(nova_figurinha) # tenta colocar no próprio álbum (self)
+        
+        if conseguiu_inserir == False: # se retornar false, significa que id já existe (repetida)
+            album_repetidas.adicionar(nova_figurinha)
+            print(f'Figurinha {nova_figurinha.nome} é REPETIDA! Foi para as repetidas.')
+            return False
+        else:
+            print(f'Figurinha {nova_figurinha.nome} é NOVA! Foi colada no álbum.')
+            return True
