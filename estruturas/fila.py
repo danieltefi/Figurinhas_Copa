@@ -45,19 +45,18 @@ class Fila:
             print('Não há propostas de troca na fila.')
             return False
 
-        tem_repetida = album_repetidas.buscar_por_id(figurinha_proposta.id) # verifica se há essa figurinha nas repetidas
+        ja_tem_no_album = album_principal.buscar_por_id(figurinha_proposta.id) # verifica se há essa figurinha no álbum
 
-        if tem_repetida is not None:
-            fig_recebida = self.dequeue() # se temos a repetida, aceita a troca e tira proposta da fila
+        if ja_tem_no_album is None:
+            fig_recebida = self.dequeue() # se n tem, aceita a troca e tira proposta da fila
             
-            album_repetidas.remover(figurinha_proposta.id) # tira a figurinha do álbum de repetidas
-            
-            album_principal.pacotinho_inserir_figurinha(fig_recebida, album_repetidas) # tenta colar no álbum principal (se for repetida, vai para as repetidas)
+            album_principal.pacotinho_inserir_figurinha(fig_recebida, album_repetidas) # tenta colar no álbum (se for repetida, vai para as repetidas)
             
             fila_historico.enqueue(fig_recebida) # guarda no histórico
             
-            print(f'Troca efetuada! Trocada a repetida do {figurinha_proposta.nome}.')
+            print(f'Troca efetuada! Você aceitou o jogador {figurinha_proposta.nome} para o álbum.')
             return True
         else:
-            print(f'Você não tem a figurinha #{figurinha_proposta.id} repetida para fazer essa troca.')
+            print(f'Troca recusada! Você já possui o jogador {figurinha_proposta.nome} (ID #{figurinha_proposta.id}) no álbum.')
+            self.dequeue() 
             return False
