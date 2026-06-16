@@ -29,6 +29,10 @@ def exibir_menu():
 
 def main():
     caminho_json = 'dados/dados_album.json' # caminho onde dados serão salvos localmente
+
+    pasta_dados = os.path.dirname(caminho_json) # extrai o nome da pasta (que é 'dados')
+    if pasta_dados: # garante que a pasta 'dados' exista
+        os.makedirs(pasta_dados, exist_ok=True) # se a pasta não existir, o os.makedirs cria automaticamente, exist_ok=True serve para não dar erro caso pasta já exista
     
     TOTAL_FIGURINHAS_ALBUM = 20 # define tamanho total que álbum terá (20 figurinhas de teste)
 
