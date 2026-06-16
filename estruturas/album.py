@@ -6,6 +6,9 @@ class Album:
         self.tamanho = 0 # contador de figurinhas no álbum 
 
     def adicionar(self, nova_figurinha): # cria um novo nó com a figurinha dentro
+        if self.buscar_por_id(nova_figurinha.id) is not None: # garante que ids duplicados nunca passem para os ponteiros abaixo
+            return False # retorna false pra avisar que é repetida
+        
         novo_nodo = NodoLista(nova_figurinha)
 
         if self.cabeca is None: # álbum está vazio
