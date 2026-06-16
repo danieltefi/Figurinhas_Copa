@@ -47,10 +47,10 @@ def main():
         if opcao == '1':
             print('\n--- INSERIR NOVA FIGURINHA ---')
             try:
-                id_fig = int(input('Digite o número (ID) da figurinha: '))
-                nome = input('Digite o nome do jogador: ')
-                pais = input('Digite o país/seleção: ')
-                raridade = input('Digite a raridade (vazio para comum): ')
+                id_fig = int(input('Digite o número (ID) da figurinha: ').strip())
+                nome = input('Digite o nome do jogador: ').title()
+                pais = input('Digite o país/seleção: ').title()
+                raridade = input('Digite a raridade (vazio para comum): ').lower()
 
                 nova_fig = Figurinha(id_fig, nome, pais, raridade) # cria objeto figurinha
                 
@@ -84,7 +84,7 @@ def main():
         elif opcao == '4':
             print('\n--- REMOVER FIGURINHA ---')
             try:
-                id_para_remover = int(input('Digite o ID da figurinha que deseja descolar: '))
+                id_para_remover = int(input('Digite o ID da figurinha que deseja descolar: ').strip())
                 removeu = meu_album.remover(id_para_remover)
                 if removeu:
                     print(f'Figurinha #{id_para_remover} removida do álbum.')
@@ -103,7 +103,7 @@ def main():
 
             if sub_opcao == '1':
                 try:
-                    id_busca = int(input('Digite o ID: '))
+                    id_busca = int(input('Digite o ID: ').strip())
                     res = meu_album.buscar_por_id(id_busca)
                     if res is not None:
                         print(f'Encontrada no Álbum: {res}')
@@ -113,7 +113,7 @@ def main():
                     print('Erro: ID inválido.')
 
             elif sub_opcao == '2':
-                nome_busca = input('Digite o nome completo do jogador: ')
+                nome_busca = input('Digite o nome completo do jogador: ').title()
                 res = meu_album.buscar_por_jogador(nome_busca)
                 if res is not None:
                     print(f'Encontrada no Álbum: {res}')
@@ -121,7 +121,7 @@ def main():
                     print('Jogador não encontrado no álbum.')
 
             elif sub_opcao == '3':
-                pais_busca = input('Digite o nome do país: ')
+                pais_busca = input('Digite o nome do país: ').title()
                 print(f'\nBuscando figurinhas da seleção ({pais_busca}):')
                 meu_album.buscar_por_selecao(pais_busca)
 
@@ -140,10 +140,10 @@ def main():
             print('\n--- REGISTRAR PROPOSTA DE TROCA ---')
             print('Insira os dados da figurinha que estão te oferecendo:')
             try:
-                id_fig = int(input('Digite o ID da figurinha: '))
-                nome = input('Digite o nome do jogador: ')
-                pais = input('Digite o país/seleção: ')
-                raridade = input('Digite a raridade (se houver): ')
+                id_fig = int(input('Digite o ID da figurinha: ').strip())
+                nome = input('Digite o nome do jogador: ').title()
+                pais = input('Digite o país/seleção: ').title()
+                raridade = input('Digite a raridade (se houver): ').lower()
 
                 fig_proposta = Figurinha(id_fig, nome, pais, raridade)
                 fila_propostas.enqueue(fig_proposta)
