@@ -181,4 +181,3 @@ cython_debug/
 .cursorindexingignore
 
 *.json
-dados/dados_album.json
